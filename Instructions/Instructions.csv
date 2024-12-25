@@ -1,0 +1,44 @@
+﻿Language,Type,Instruction
+PowerShell,Code,"when generating code for PowerShell functions, make sure to include full comment-based help for the function."
+PowerShell,Code,"when generating code for PowerShell functions, make sure to include the CmdletBinding and OutputType attributes."
+PowerShell,Code,"when generating code for PowerShell functions, make sure to format each parameter so that the Parameter attribute is on top (if applicable), followed by the parameter type, followed by the parameter name."
+PowerShell,Code,"when generating code for PowerShell functions, for each parameter that is not mandatory, do not include 'Mandatory = $false' in the Parameter attribute."
+PowerShell,Code,"when generating code for PowerShell functions, for each parameter make sure to include a HelpMessage attribute with a one sentence paramter help message."
+PowerShell,Code,"when generating code for PowerShell functions, do not use positional parameters."
+PowerShell,Code,"when naming PowerShell functions, make sure to only use approved verbs."
+PowerShell,Code,"when naming PowerShell functions, to include parameter validation where possible."
+PowerShell,Code,"when generating PowerShell code, add a new line and indent after each pipe if there are two or more pipes in the line."
+PowerShell,Code,"when generating PowerShell code, if a function call has more than two parameters use splatting."
+PowerShell,Code,"when generating PowerShell code, make sure not to use reserved words and/or automatic variables for variable names."
+PowerShell,Code,"when generating PowerShell code, when checking if a value is $null, make sure to place the $null parameter to the left of the operator."
+PowerShell,Code,"when generating PowerShell code, do not use arrays unless absolutely necessary. Instead, use ArrayLists."
+PowerShell,Code,"when generating PowerShell code, make sure the code is compatible with Windows PowerShell 5.1."
+PowerShell,Code,"when generating PowerShell functions, make sure to use singular nouns for function names and singular parameter names."
+PowerShell,Code,"when generating PowerShell functions, make sure to use singular parameter names."
+PowerShell,Code,"when generating PowerShell functions, do not include boolean parameters. Instead, use switch parameters."
+PowerShell,Code,"when generating multiple PowerShell functions, make sure to arrange them as one function per file."
+PowerShell,Code,"when generating multiple PowerShell functions and/or modules, never merge them into a single file."
+PowerShell,Code,"when generating PowerShell code that can take awhile to execute, make sure to provide the user with some feedback, such as Write-Progress or print some output to the screen."
+CSharp,Code,"when generating C# functions, make sure to inclue complate XML documentation comments."
+any,Code,make sure to include comments to explain the code.
+any,Code,"when generating code that accepts input, make sure to perform input validation."
+any,Code,"avoid lines that are longer than 120 characters, unless it is a URL."
+any,Code,"when generating code that can take awhile to execute, make sure to provide the user with some feedback"
+any,Code,"always use PascalCase for function, parameter, and varible names."
+any,Code,use try/catch or equivalent error-handling constructs to manage exceptions gracefully.
+PowerShell,Code,break long pipelines into multiple lines and indent each new pipe for readability.
+any,Code,validate all inputs before processing.
+any,Code,"use pascalcase for naming conventions, including functions, parameters, and variables."
+CSharp,Code,use async and await for asynchronous operations to prevent blocking the main thread.
+CSharp,Code,optimize memory management by disposing of unmanaged resources and minimizing allocations.
+PowerShell,Code,place each class in its own file to ensure modularity and maintainability.
+any,Test,"write unit tests for every function, focusing on typical use cases and edge cases."
+any,Test,"validate input and output in all test cases, ensuring they meet expected results."
+any,Test,"for each test, define clear criteria for success and failure to ensure reliability."
+CSharp,Test,include edge-case tests to ensure the application behaves correctly in extreme scenarios.
+CSharp,Test,test for expected exceptions to ensure they are raised and handled appropriately.
+CSharp,Test,validate asynchronous methods by testing their behavior and results without blocking.
+PowerShell,Test,create one test file per function to ensure tests are modular and organized.
+PowerShell,Test,test both success and failure scenarios for each function.
+PowerShell,Test,"validate parameter handling in tests, including invalid inputs and boundary cases."
+PowerShell,Test,verify that error-handling mechanisms work as expected during failure scenarios.
